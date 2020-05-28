@@ -6,6 +6,7 @@
 
 html{
     font-size: 10px;
+    font-family: 'Questrial', sans-serif;
 }
 
 .head{
@@ -35,7 +36,7 @@ html{
 }
 
 .navigation a{
-  padding: 16px;
+  padding: 10px;
   text-decoration: none;
   color: rgb(124, 116, 116);
   margin-top: 16px;
@@ -54,7 +55,7 @@ html{
 .imgBanner{
     margin-top: 80px;
     display: inline-block;
-    height: 500px;
+    height: 520px;
     width: 600px;
     margin-left: 24px;
    
@@ -62,17 +63,20 @@ html{
 }
 
 .bannerH1{
-    font-size: 3rem;
+    font-size: 4rem;
     position: relative;
     left: 720px;
     bottom: 400px;
+    width: 350px;
 }
 
-.bannerH2{
-    font-size: 1.5rem;
+.bannerp2{
+    font-weight: 0;
+    font-size: 2rem;
     position: relative;
     left: 720px;
     bottom: 380px;
+    width: 350px;
 }
  
 .buttomBanner{
@@ -80,7 +84,7 @@ html{
     position: relative;
     left: 780px;
     bottom: 340px;
-    width: 300px;
+    width: 400px;
     background-color:rgb(75, 68, 68);
     color: white;
     border: none;
