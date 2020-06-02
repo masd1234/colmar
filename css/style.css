@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: 0;
     
 }
 
@@ -224,7 +225,7 @@ html{
 }
 
 .header3{
-    
+    font-weight: normal;
     width: 100%;
     text-align: center;
     font-size: 3.5rem;
@@ -245,11 +246,7 @@ html{
   background-color: white;
   text-align: left;
   width: 16,666667%;
-
-  
  
- 
-  
 }
 
 .cont31 img,
@@ -261,13 +258,6 @@ html{
   height: auto;
   max-width: 440px;
 }
-
-.cont31,
-.cont32{
-  
-}
-
-
 
 
 .cont31 h2,
@@ -291,6 +281,109 @@ html{
     margin-left: 16px;
     font-size: 1.6rem;
     margin-top: 16px;
+    width: 400px;
+    
+}
+
+
+.section4{
+    
+    width: 100%;
+}
+
+.head4{
+    
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 3rem;
+
+}
+
+.videoCont{
+    
+    width: 60%;
+    float: left;
+    
+   
+
+}
+
+.videosss{
+    width: 100%;
+    
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    
+}
+
+.videoCont h2{
+  padding-left: 24px;
+  font-size: 2.5rem;
+}
+
+
+.videoCont p{
+    padding-top: 8px;
+    padding-left: 24px;
+    padding-bottom: 32px;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.photoCont{
+    width: 40%;
+    float: right;
+}
+
+.photoCont1{
+    width: 100%;
+}
+
+.photoCont2{
+    width: 100%;
+
+}
+
+.photoCont1 img,
+.photoCont2 img{
+    width: 35%;
+    height: auto;
+    padding: 16px
+   
+}
+
+.con1,
+.con2{
+    width: 65%;
+    height: 100px;
+    float: right;
+    position: relative;
+    top: 50px;
+    padding: 16px;
+    
+    
+}
+.photoCont1 h2,
+.photoCont2 h2{
+    width: 65%;
+    text-align: left;
+    font-size: 2rem;
+}
+
+
+.photoCont1 p,
+.photoCont2 p{
+    width: 65%;
+    text-align: left;
+    margin-top: 8px;
+    font-size: 1.2rem;
+}
+
+
+.photoCont1{
+    background-color: rgb(204, 199, 199);
 }
 
 
