@@ -13,6 +13,7 @@ html{
 
 body{
    width: 100%;
+   margin: 0px;
 }
 
 .head{
@@ -59,8 +60,6 @@ body{
     justify-content: space-around;
     align-items: center;
     background-color: rgb(191, 197, 201);
-    width: auto;
-    height: auto;
     position: relative;
     top: 65px;
     
@@ -69,13 +68,15 @@ body{
 }
 
 .sect2Desc{
-    width: 40%;
+    flex-basis: 40%;
+    flex-wrap: wrap;
 }
 
 
 .imgBanner{
-    height:500px;
-    width: 60%;
+    height:700px;
+    flex-basis: 60%;
+    background-repeat: no-repeat;
     margin: 32px 24px;
     top: 55px;
 
@@ -87,12 +88,14 @@ body{
     text-align: left;
     margin-bottom: 16px;
     font-size: 3.5rem;
+    min-width: 40%;
 }
 
 .bannerp2{
     text-align: left;
     margin-bottom: 16px;
     font-size: 2.5rem;
+    min-width: 40%;
 }
  
 .buttomBanner{
@@ -110,7 +113,6 @@ body{
 .section2{
     width: 100%;
     display:flex;
-    flex-wrap: wrap;
     position: relative;
     top: 80px;
     height: auto;
@@ -124,6 +126,7 @@ body{
     justify-content: space-around;
     flex-basis: 60%;
     align-self: center;
+    height: auto;
     flex-wrap: wrap;
     padding: 32px 24px;
 
@@ -166,19 +169,16 @@ body{
 .right{
     display: flex;
     flex-direction: column;
-    width:40%;
-   
-    padding: 32px 24px;
+    flex-basis:40%;
+    
+    padding: 32px 0px 32px 0px;
     
     
 }
 
 .cont1,.cont2,.cont3{
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0px;
-    
+    display: flex;
+    height: 195px;
     
     
 
@@ -195,7 +195,7 @@ body{
 .img1, .img2, .img3{
  
     padding: 16px 16px 16px 16px;
-    width: 35%;
+    flex-basis: 35%;
     height:auto;
     
    
@@ -204,13 +204,18 @@ body{
 .descCont1,
 .desCont2,
 .desCont3{
-    width: 65%;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    flex-basis: 65%;
 }
 
 
 
 .descCont1 h3, .desCont2 h3, .desCont3 h3{
-    
+ 
   font-size: 2.3rem;
   margin-bottom: 8px;
   
@@ -489,7 +494,7 @@ footer a{
 
 
 
-  @media only screen and (max-width: 1217px) {
+  @media only screen and (max-width: 1295px) {
     .leftImg{
         margin: 0px;
     }
@@ -497,6 +502,10 @@ footer a{
     .right{
         margin: 0;
     }
+
+    
+
+  
 
     .img1,
     .img2,
@@ -514,7 +523,20 @@ footer a{
   @media only screen and (max-width: 1065px) {
     
     
-    
+    .right{
+        flex-basis: 100%;
+    }
+
+   .leftImg{
+       display: none;
+   } 
+
+.img1,
+.img2,
+.img3{
+    flex-basis:auto;
+    flex-wrap: wrap;
+}
 
     
     .navigation a{
@@ -536,6 +558,39 @@ footer a{
         margin: 0 0 16px ;
     }
 
+   
+
+    
+    .sect2Desc{
+        flex-basis: 100%;
+        margin: 32px 16px 32px 16px;
+        
+    }
+    .imgBanner{
+        height: 300px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-basis: 100%;
+    }
+  
+    
+    .bannerH1{
+        margin-bottom: 32px;
+        
+    }
+  
+    .bannerp2{
+        margin-bottom: 24px;
+    }
+  
+    .buttomBanner{
+        margin-bottom: 32px;
+    }
+
+    
+
+
 }
 
    
@@ -546,17 +601,28 @@ footer a{
        margin: 0px;
    }
 
-    .right{
-        width: 100%;
-    }
+  
 
-    .img1,
-    .img2,
-    .img3{
-        width: 100%;
-        height: 300px;
-        padding: 16px;
-    }
+  
+
+   .img1,
+   .img2,
+   .img3{
+       width: 40%;
+       height: 200px;
+   }
+       
+    
+
+
+
+    
+   .descCont1,
+   .desCont2,
+   .section3{
+       flex-wrap: wrap;
+   }
+    
 
     .descCont1 h3,
     .desCont2 h3,
@@ -569,7 +635,7 @@ footer a{
     .desCont3 a{
         text-align: left;
         padding-left: 16px;
-        font-weight: 2rem;
+        width: auto;
         
     }
 
@@ -583,11 +649,9 @@ footer a{
         padding-left: 16px;
         padding-bottom: 32px;
     }
-    .leftImg{
-        display: none;
-    }
+    
 
-
+   
     
   
 }
@@ -597,12 +661,8 @@ footer a{
   @media only screen and (max-width: 788px ) {
       .leftImg{
           
-          flex-basis: 100%;
-          
+          flex-basis: 100%;  
       }
-
-
-    
 
       .right{
           width: 100%;
@@ -615,10 +675,6 @@ footer a{
 
     
   }
-
-
-  
-
 
 
   @media only screen and (max-width: 712px) {
@@ -634,45 +690,23 @@ footer a{
 
   .section1{
       flex-wrap: wrap;
-  }
-
-  .imgBanner{
-      margin-top: 0px;
-      margin-left: 0px;
-      margin-right: 0px;
-      width: 100%;
-  }
-
-  .sect2Desc{
-      width: 80%;
-  }
-  .bannerH1{
-      margin-bottom: 32px;
-    
-  }
-
-  .bannerp2{
-      margin-bottom: 24px;
-  }
-
-  .buttomBanner{
-      margin-bottom: 32px;
+      width: auto;
   }
 
   
 
-  
-    
   }
+
 
   @media only screen and (max-width: 705px) {
     .photoCont{
         display: none;
     }
-
-    .section4{
-        height: 100px;
+    .leftImg{
+        display: none;
     }
+
+    
 
     .videoCont{
         width: 100%;
@@ -698,28 +732,52 @@ footer a{
 
     
 
- 
 
   @media only screen and (max-width: 480px) {
     .navigation i{
         padding: 30px;
     }
 
-    .right{
-        
-        padding: 0px 16px 64px 16px;
+    .section1{
+        width: 110%;
+    }
+
+    .section2{
+        width: 110%;
+    }
+
+    .section3{
+        width: 110%;
+    }
+
+    .section4{
+        width: 110%;
     }
 
 
-    .imgBanner{
-        height: auto;
-    }
+
 
     .cont1,
     .cont2,
     .cont3{
-        height: 390px;
+        display: inline-block;
+        height: auto;
+        width: auto;
     }
+
+    .img1,
+    .img2,
+    .img3{
+        width:100%
+    }
+
+
+   
+
+
+    
+
+    
 
     .cont3{
         background-color: white;
@@ -781,12 +839,34 @@ footer a{
     }
 
    footer{
-       top:200px
+       top:293px
    }
     
   }
 
 
+  @media only screen and (max-width: 360px){
+    footer{
+        top:260px
+    }
+  }
 
 
+
+  @media only screen and (max-width: 320px){
+
+    .section1{
+        width: 150%;
+     
+    }
+
+    .section3{
+        width: 150%;
+    }
+
+    .section4{
+        width: 150%;
+    }
+
+  }
   
