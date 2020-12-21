@@ -1,0 +1,25 @@
+footer {
+  height: 70px;
+  font-size: 1.5rem;
+  border-top: rgb(204, 199, 199) solid 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  & p {
+    margin-left: 0.5rem;
+    flex-grow: 1;
+  }
+
+  & a {
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}

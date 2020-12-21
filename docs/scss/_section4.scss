@@ -1,0 +1,79 @@
+.section4 {
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  position: relative;
+  .head4 {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 3rem;
+  }
+
+  .contSection4 {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    .videoCont {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      flex-grow: 1;
+      justify-content: space-evenly;
+      .videosss {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.photoCont {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .photoCont1 {
+    background-color: rgb(204, 199, 199);
+  }
+
+  .photoCont1,
+  .photoCont2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    .con1,
+    .con2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    & img,
+    &img {
+      max-width: 100%;
+      height: 200px;
+      padding: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 705px) {
+  .photoCont {
+    display: none;
+  }
+
+  .videoCont {
+    width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+
+    & h2,
+    & p {
+      display: none;
+    }
+  }
+}
