@@ -1,5 +1,5 @@
 .section3 {
-  background-color: rgb(233, 227, 227);
+  background-color: $secondary-background-color;
   display: block;
   height: auto;
   margin-bottom: 32px;
@@ -19,7 +19,7 @@
     .contSection3 {
       text-align: left;
       flex-basis: 400px;
-      background-color: rgb(255, 255, 255);
+      background-color: $main-background-color;
       height: 320px;
       margin: 1rem;
 
@@ -29,6 +29,7 @@
       & h2,
       & p {
         margin-left: 1rem;
+        color: $main-text-color;
       }
 
       & img {

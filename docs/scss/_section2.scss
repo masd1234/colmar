@@ -21,17 +21,20 @@
     & h1 {
       width: 100%;
       font-size: 2.5rem;
+      color: $main-text-color;
     }
 
     & p {
       width: 100%;
       text-align: left;
       font-size: 1.2rem;
+      color: $main-text-color;
     }
 
     & h6 {
       width: 100%;
       font-size: 0.7rem;
+      color: $main-text-color;
     }
   }
 
@@ -59,7 +62,7 @@
     }
 
     .cont3 {
-      background-color: rgb(233, 227, 227);
+      background-color: $secondary-background-color;
     }
   }
 
